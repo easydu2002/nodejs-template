@@ -1,6 +1,6 @@
 {
   "name": "nodejs-template",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "js 模板",
   "author": "easydu",
   "license": "MIT",
@@ -21,7 +21,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky install",
-    "commit": "cz"
+    "commit": "cz",
+    "release": "standard-version"
   },
   "config": {
     "commitizen": {
@@ -37,7 +38,8 @@
     "eslint": "^8.36.0",
     "husky": "^8.0.3",
     "inquirer": "8",
-    "lint-staged": "^13.2.0"
+    "lint-staged": "^13.2.0",
+    "standard-version": "^9.5.0"
   },
   "lint-staged": {
     "*": "npm run lint"
