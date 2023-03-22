@@ -1,0 +1,45 @@
+{
+  "name": "nodejs-template",
+  "version": "1.0.0",
+  "description": "js 模板",
+  "author": "easydu",
+  "license": "MIT",
+  "homepage": "https://github.com/easydu2002/nodejs-template#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easydu2002/nodejs-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/easydu2002/nodejs-template/issues"
+  },
+  "keywords": [
+    "template"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"test ok!\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky install",
+    "commit": "cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.37.0",
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/cz-commitlint": "^17.4.4",
+    "commitizen": "^4.3.0",
+    "eslint": "^8.36.0",
+    "husky": "^8.0.3",
+    "inquirer": "8",
+    "lint-staged": "^13.2.0"
+  },
+  "lint-staged": {
+    "*": "npm run lint"
+  }
+}
